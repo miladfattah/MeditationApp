@@ -8,9 +8,44 @@
     <title>MeditationsApp</title>
 </head>
 <body>
-    
+    <div class="vid-contianer">
+        <video loop preload="auto" >
+            <source src="./pubilc/videos/rain.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="app">
+ 
+        <div class="time-select">
+            <button data-time="20"> 20 secend</button>
+            <button data-time="60"> 1 Minutes</button>
+            <button data-time="300"> 5 Minutes</button>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+                <source src="./pubilc/audio/rain.mp3">
+            </audio>
+            <img src="./pubilc/images/play.svg" class="play" alt="play">
 
-
+            <svg width="330" height="330" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M319 165C319 250.052 250.052 319 165 319C79.9482 319 11 250.052 11 165C11 79.9482 79.9482 11 165 11C250.052 11 319 79.9482 319 165Z" stroke="#fff" stroke-width="22"/>
+            </svg>
+                
+            <svg class="out-line" width="330" height="330" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M319 165C319 250.052 250.052 319 165 319C79.9482 319 11 250.052 11 165C11 79.9482 79.9482 11 165 11C250.052 11 319 79.9482 319 165Z" stroke="#0A66A9" stroke-width="22"/>
+            </svg>
+                
+               
+            <h3 class="time-display">0:00</h3>
+        </div>
+        <div class="sound-picker">
+            <button data-video="./pubilc/videos/rain.webm" data-sound="./pubilc/audio/rain.mp3">
+                <img src="./pubilc/images/rainy.svg" alt="rain">
+            </button>
+            <button data-video="./pubilc/videos/sunny.webm" data-sound="./pubilc/audio/rain.mp3">
+                <img src="./pubilc/images/sun.svg" alt="sunny">
+            </button>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
